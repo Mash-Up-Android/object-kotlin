@@ -11,6 +11,8 @@
 - [02_무엇이_문제인가.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch1_객체_설계/02_무엇이_문제인가.md)
 - [03_설계_개선하기.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch1_객체_설계/03_설계_개선하기.md)
 - [04_객체지향_설계.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch1_객체_설계/04_객체지향_설계.md)
+### 호현
+- [CH1_객체_설계.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH1_객체_설계.md)
 
 
 
