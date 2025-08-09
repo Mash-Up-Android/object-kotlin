@@ -13,6 +13,7 @@
 - [04_객체지향_설계.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch1_객체_설계/04_객체지향_설계.md)
 ### 호현
 - [CH1_객체_설계.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH1_객체_설계.md)
+- [CH2_객체지향_프로그래밍.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH2_객체지향_프로그래밍.md)
 
 
 
