@@ -37,6 +37,10 @@
 - [03_할인_요금_구하기.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch2_객체지향_프로그래밍/03_할인_요금_구하기.md)
 - [04_상속과_다형성.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch2_객체지향_프로그래밍/04_상속과_다형성.md)
 - [05_추상화와_유연성.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch2_객체지향_프로그래밍/05_추상화와_유연성.md)
+### Ch3_역할_책임_협력
+- [01_역할.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch3_역할_책임_협력/01_역할.md)
+- [02_책임.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch3_역할_책임_협력/02_책임.md)
+- [03_역할.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/재성/Ch3_역할_책임_협력/03_역할.md)
 ### 호현
 - [CH1_객체_설계.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH1_객체_설계.md)
 - [CH2_객체지향_프로그래밍.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH2_객체지향_프로그래밍.md)
