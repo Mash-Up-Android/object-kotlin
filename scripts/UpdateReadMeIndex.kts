@@ -9,14 +9,13 @@ val readmeFile = File("README.md")
 fun generateReadme() {
     val content = StringBuilder()
     generateHeaderMessage(content)
+    generateContributorMessage(content)
     generateMainMessage(content)
-    generateFooterMessage(content)
     overrideReadMeFile(content)
 }
 
 fun generateHeaderMessage(content: StringBuilder) {
     content.appendWithLineBreak("<h1 align=\"center\">오브젝트 : 코드로 이해하는 객체지향 설계</h1>")
-    content.appendWithLineBreak("📚🚨📚🚨📚🚨📚🚨📚🚨📚🚨📚🚨📚🚨📚🚨📚\n")
     insertSectionDivider(content)
 }
 
@@ -33,7 +32,7 @@ fun generateMainMessage(content: StringBuilder) {
     }
 }
 
-fun generateFooterMessage(content: StringBuilder) {
+fun generateContributorMessage(content: StringBuilder) {
     content.appendWithLineBreak("## Contributors")
     content.appendWithLineBreak("<table>")
     content.appendWithLineBreak("    <tr align=\"center\">")
