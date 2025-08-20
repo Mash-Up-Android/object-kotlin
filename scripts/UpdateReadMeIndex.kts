@@ -52,6 +52,7 @@ fun generateContributorMessage(content: StringBuilder) {
     content.appendWithLineBreak("        </td>")
     content.appendWithLineBreak("    </tr>")
     content.appendWithLineBreak("</table>")
+    insertSectionDivider(content)
 }
 
 fun appendFolderContent(content: StringBuilder, folder: File, isFirstCall: Boolean) {
