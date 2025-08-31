@@ -36,6 +36,6 @@
 - [CH2_객체지향_프로그래밍.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH2_객체지향_프로그래밍.md)
 - [CH3_역할_책임_협력.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH3_역할_책임_협력.md)
 - [CH4_설계_품질과_트레이드오프.md](https://github.com/Mash-Up-Android/object-kotlin/tree/main/docs/Object/호현/CH4_설계_품질과_트레이드오프.md)
-
+- [CH5_책임_할당하기](https://github.com/Mash-Up-Android/object-kotlin/blob/main/docs/Object/%ED%98%B8%ED%98%84/CH5_%EC%B1%85%EC%9E%84_%ED%95%A0%EB%8B%B9%ED%95%98%EA%B8%B0.md)
 
 
