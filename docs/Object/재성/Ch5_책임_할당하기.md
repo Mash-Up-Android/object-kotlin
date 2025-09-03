@@ -30,7 +30,7 @@
 기본적인 방법은 객체 설계를 위한 질문 순서를 바꾸는 것.
 
 **데이터 중심 설계에서는?**
-
+자
 1. 객체가 포함해야 하는 데이터가 무엇인가?
 2. 데이터를 처리하는데 필요한 오퍼레이션은 무엇인가?
 
@@ -73,7 +73,8 @@ GRASP (General Responsibility Assignment Software Pattern : 일반적 책임 할
 
 영화 예매 시스템에서 살펴보자
 
-이미지
+<img width="656" height="185" alt="image" src="https://github.com/user-attachments/assets/e5bdb3b6-c0f4-4281-ae84-5d30ae4c7a8f" />
+
 
 설계를 시작하는 단계에서는 개념들의 의미나 관계가 완벽할 필요는 없음
 
@@ -85,7 +86,7 @@ GRASP (General Responsibility Assignment Software Pattern : 일반적 책임 할
 
 도메인 모델이 구현을 염두에 두고 구조화 되는 것은 바람직하다는 것을 의미
 
-이미지
+<img width="656" height="119" alt="image" src="https://github.com/user-attachments/assets/32ae17ca-16d0-4882-a4a9-1a2540390acb" />
 
 Q. 이게 무슨말일까??
 
@@ -126,7 +127,8 @@ Q. 이게 무슨말일까??
 
 INFORMATION EXPERT 패턴 적용 예시
 
-이미지
+<img width="621" height="187" alt="image" src="https://github.com/user-attachments/assets/1ce68c11-5f41-405e-9037-b72d69671156" />
+
 
 “예매하라” 메시지를 처리하기 위해서는 예매에 필요한 정보를 가장 많이 알고있는 객체에게 책임을 할당해야 함 → Screening 객체가 영화에 대한 정보, 상영시간 등 예매를 위한 정보를 가장 많이 알고있음
 
@@ -138,6 +140,8 @@ INFORMATION EXPERT 패턴 적용 예시
 
 이 과정이 반복되다 보면 연쇄적인 메시지 송수신 과정을 통해 협력 공동체로 구성됨
 
+<img width="657" height="154" alt="image" src="https://github.com/user-attachments/assets/015d7842-920a-49b8-bdd3-662063546667" />
+
 
 “예매하라” 메시지를 완료하기 위해서는 가격 계산 작업이 필요
 
@@ -146,6 +150,9 @@ Screening 객체는 가격과 관련된 정보를 모르기 때문에 외부 객
 → “가격을 계산하라” 메시지가 외부 객체로 송신됨
 
 → INFORMATION EXPERT 패턴에 의해 해당 메시지는 Movie객체의 책임이 됨
+
+<img width="656" height="208" alt="image" src="https://github.com/user-attachments/assets/e38bfcb4-0949-4fbe-b82b-164750661095" />
+
 
 Movie 객체는 “가격을 계산하라” 메시지의 완료를 위해 가격을 계산하겠지만, 할인 조건에 대한 적용 여부를 판단해야 함
 
@@ -160,6 +167,8 @@ Movie 객체는 “가격을 계산하라” 메시지의 완료를 위해 가�
 ### 높은 응집도와 낮은 결합도
 
 “할인 여부를 판단하라” 메시지를 Movie가 송신하는게 아니라 Screening이 송신하게 한다면?
+
+<img width="656" height="285" alt="image" src="https://github.com/user-attachments/assets/c9acd617-8b55-48d9-8627-650aea1f7979" />
 
 위 그림처럼 설계될 수 있지만 굳이?
 → Screening이 DiscountCondition 객체와 불필요한 협력 관계를 맺게 된다.
@@ -198,6 +207,8 @@ CREATOR (창조자) 패턴을 통해 객체를 생성할 책임을 할당하는�
 4. 객체 B가 객체 A를 초기화하는데 필요한 데이터를 들고있음. (B는 A의 정보전문가)
 
 → 이 조건들을 만족하여 CREATOR를 찾을 경우에 객체 B는 객체 A와 강하게 결합됨
+
+<img width="659" height="227" alt="image" src="https://github.com/user-attachments/assets/c87a5429-e2da-4b7b-b30a-5cd985c4a414" />
 
 Screening은 예매 정보를 생성하는데 필요한 다른 정보에 대한 정보전문가이며, Movie도 알고있음
 
@@ -398,9 +409,13 @@ Movie객체 입장에서 SequenceCondition이나 PeriodCondition이나 뭐가 �
 
 SequenceCondition, PeriodCondition에 각각의 책임은 할당되었고, 협력관계에서 역할이 들어갈 차례 두둥
 
+<img width="659" height="158" alt="image" src="https://github.com/user-attachments/assets/a18800b6-b925-475c-9d04-8842e4846219" />
+
 DiscountCondition을 역할로 추가해버리자!
 
 이걸 통해서 구체적인 타입들(Period, Sequence)를 추상화할 수 있다
+
+<img width="657" height="204" alt="image" src="https://github.com/user-attachments/assets/57a3328e-489e-435a-8b82-8ef6bac90c54" />
 
 객체의 암시적 타입(SEQUENCE, PERIOD)에 따라 행동을 분기해야 한다면
 암시 타입을 명시적인 클래스(SequenceCondition, PeriodCondition)로 정의하고 행동을 나눔으로서 응집도 문제를 해결할 수 있다.
@@ -542,6 +557,8 @@ class NonDiscountMovie() : Movie() { .. }
 
 → 책임을 중심으로 협력을 설계할 때 얻을 수 있는 혜택들임!
 
+<img width="654" height="210" alt="image" src="https://github.com/user-attachments/assets/0860fd32-2a1a-4fa5-8cb6-d8761deb4565" />
+
 **도메인의 구조가 코드의 구조를 이끈다!**
 
 도메인 모델은 단순히 설계에 필요한 용어를 제공하는 것을 넘어 코드 구조에도 영향을 미친다
@@ -562,6 +579,8 @@ Movie와 DiscountConditiond에는 할인 조건과 할인 정책이 변경될 �
 복잡성이 높아지더라도 할인 정책 변경을 쉽게 수용할 수 있도록 코드를 유연하게 만드는 것이 좋다
 
 → 이때 사용하는게 상속이 아니라 합성
+
+<img width="663" height="222" alt="image" src="https://github.com/user-attachments/assets/034fbb77-c5d6-4fe0-b423-6a7f32850d65" />
 
 Movie의 상속 구조를 DiscountPolicy로 분리시켜 런타임에 수정 가능하도록 하는 방식으로 합성을 사용할 수 있다
 
