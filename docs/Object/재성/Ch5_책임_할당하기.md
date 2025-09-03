@@ -236,6 +236,7 @@ class Screening(
 
 **Movie 객체 설계**
 
+
 ```kotlin
 class Movie(
     private val title: String,
